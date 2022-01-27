@@ -4,7 +4,7 @@ This is exercises from the book, Starting with Python (5th edition) by Tony Gadd
 
 Just in case it's your first time using Github:
 1. Click the chapter you want to see
-2. Click 'copy raw contents' icon
+2. Click 'copy raw contents' icon on the top right corner
 3. Paste it on Python IDLE or any text editor you want
 
 
