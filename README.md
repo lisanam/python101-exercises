@@ -7,5 +7,5 @@ Just in case it's your first time using Github:
 2. Click 'copy raw contents' icon
 3. Paste it on Python IDLE or any text editor you want
 
-'copy raw contents' Icon
+
 ![alt text](https://raw.githubusercontent.com/lisanam/python101-exercises/master/copy_raw_contents_icon.png)
