@@ -1,4 +1,4 @@
-#Chaper 2: Input, Processing, and Output
+# Chaper 2: Input, Processing, and Output
 
 # 1. Personal Information
 # Write a program that displays the following information:
