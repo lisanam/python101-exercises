@@ -69,8 +69,8 @@
 # Last month, Joe purchased some stock in Acme Software, Inc. Here are the details of the purchase:
 # The number of shares that Joe purchased was 2,000.
 # When Joe purchased the stock, he paid $40.00 per share.
+# Joe paid his stock broker a commission that amounted to 3 percent of the amount he paid for the stock.
 
-# Joe paid his stockbroker a commission that amounted to 3 percent of the amount he paid for the stock.
 # Two weeks later, Joe sold the stock. Here are the details of the sale:
 # The number of shares that Joe sold was 2,000.
 # He sold the stock for $42.75 per share.
@@ -90,7 +90,8 @@
 # The terms in the formula are:
 # V is the number of grapevines that will fit in the row.
 # R is the length of the row, in feet.
-# E is the amount of space, in feet, used by an end-post assembly. S is the space between vines, in feet.
+# E is the amount of space, in feet, used by an end-post assembly. 
+# S is the space between vines, in feet.
 
 # Write a program that makes the calculation for the vineyard owner. The program should ask the user to input the following:
 # The length of the row, in feet
@@ -115,6 +116,7 @@
 # The number of years the account will be left to earn interest 
 # Once the input data has been entered, the program should calculate and display the amount of money that will be in the account after the specified number of years.
 # NOTE: The user should enter the interest rate as a percentage. For example, 2 percent would be entered as 2, not as .02. The program will then have to divide the input by 100 to move the decimal point to the correct position.
+
 
 #15. Turtle Graphics Drawings
 # Use the turtle graphics library to write programs that reproduce each of the designs shown in Figure 2-40.
