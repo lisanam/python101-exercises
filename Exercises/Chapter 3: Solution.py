@@ -3,9 +3,56 @@
 # 1. Day of the Week
 # Write a program that asks the user for a number in the range of 1 through 7. The program should display the corresponding day of the week, where 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday, and 7 = Sunday. The program should display an error message if the user enters a number that is outside the range of 1 through 7.
 
+#Ask user for number of day of the week & convert to int
+day_of_week = int(input("What is the day of the week? (1-7)"))
+
+#get the day of the week as a word
+if day_of_week == 1:
+  day_of_week_in_word = "Monday"
+elif day_of_week == 2:
+  day_of_week_in_word = "Tuesday"
+elif day_of_week == 3:
+  day_of_week_in_word = "Wednesday"
+elif day_of_week == 4:
+  day_of_week_in_word = "Thursday"
+elif day_of_week == 5:
+  day_of_week_in_word = "Friday"
+elif day_of_week == 6:
+  day_of_week_in_word = "Saturday"
+elif day_of_week == 7:
+  day_of_week_in_word = "Sunday"
+# provide fall back for inputs not 1-7
+else:
+  print("I said 1-7!!!")
+  day_of_week_in_word = "NOT MONDAY-SUNDAY!"
+
+#replay the day of the week
+print(f"The day is {day_of_week_in_word}")
+
 
 # 2. Areas of Rectangles
 # The area of a rectangle is the rectangle’s length times its width. Write a program that asks for the length and width of two rectangles. The program should tell the user which rectangle has the greater area, or if the areas are the same.
+
+# ask the first rectangle's length & width + convert float
+length1 = float(input("Enter the first rectangle's length:"))
+width1 = float(input("Enter the first rectangle's width:"))
+# ask the second rectangle's length & width + convert float
+length2 = float(input("Enter the second rectangle's length:"))
+width2 = float(input("Enter the second rectangle's width:"))
+
+# get area of both rectangles
+area1 = length1 * width1
+area2 = length2 * width2
+
+# compare two rectangles
+if area1 == area2:
+  print("Two rectangles have the same area")
+elif area1 < area2:
+  print("The second rectangle is bigger")
+elif area1 > area2:
+  print("The first rectangle is bigger")
+else:
+  print("I don't know what you entered. Please try again")
 
 
 # 3. Age Classifier
@@ -15,6 +62,24 @@
 # If the person is at least 13 years old, but less than 20 years old, he or she is a teenager.
 # If the person is at least 20 years old, he or she is an adult.
 
+# ask person's age & convert it
+age = float(input("Please enter your age:"))
+
+# get person's stage
+if age > 0 and age <= 1:
+  stage = "an infant"
+elif age > 1 and age < 13:
+  stage = "a child"
+elif age >= 13 and age < 20:
+  stage = "a teenager"
+elif age >= 20:
+  stage = "an adult"
+else:
+  print("Error not a vaild age!")
+  stage = "not giving proper age"
+
+# display it
+print(f"You are {stage}")
 
 # 4. Roman Numerals
 # Write a program that prompts the user to enter a number within the range of 1 through 10. The program should display the Roman numeral version of that number. If the number is outside the range of 1 through 10, the program should display an error message. The following table shows the Roman numerals for the numbers 1 through 10:
@@ -24,6 +89,8 @@
   Roman   I II III IV V VI VII VIII IX  X
   Numeral
 '''
+
+
 
 # 5. Mass and Weight
 # Scientists measure an object’s mass in kilograms and its weight in newtons. If you know the amount of mass of an object in kilograms, you can calculate its weight in newtons with the following formula:
@@ -41,6 +108,25 @@
 # When you mix red and blue, you get purple. When you mix red and yellow, you get orange. When you mix blue and yellow, you get green.
 # Design a program that prompts the user to enter the names of two primary colors to mix. If the user enters anything other than “red,” “blue,” or “yellow,” the program should display an error message. Otherwise, the program should display the name of the secondary color that results.
 
+# ask user for colors
+color1 = input("Pick the first color (Red, Yellow, Blue)").lower().strip()
+color2 = input("Pick the second color (Red, Yellow, Blue)").lower().strip()
+
+# if two colors are the same
+if color1 == color2:
+  print(color1)
+
+# print new color
+elif (color1 == "red" and color2 == "blue") or (color1 == "blue" and color2 == "red"): 
+  print("Purple")
+elif (color1 == "red" and color2 == "yellow") or (color1 == "yellow" and color2 == "red"):
+  print("Orange")
+elif (color1 == "yellow" and color2 == "blue") or (color1 == "blue" and color2 == "yellow"):
+  print("Green")
+
+# if colors are not red, yellow, or blue, give error
+else:
+  print("Wrong color!")
 
 # 8. Hot Dog Cookout Calculator
 # Assume hot dogs come in packages of 10, and hot dog buns come in packages of 8. Write a program that calculates the number of packages of hot dogs and the number of packages of hot dog buns needed for a cookout, with the minimum amount of leftovers. The program should ask the user for the number of people attending the cookout and the number of hot dogs each person will be given. The program should display the following details:
